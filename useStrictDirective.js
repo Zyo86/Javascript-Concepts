@@ -44,7 +44,7 @@ console.log(x)
 function evalTest(){
   "use strict";
   var y = 11;
-  eval("var y = 110;console.log(y + ' = y inside eval')"); //inside eval gives value 110
+  eval("var y = 110;console.log(y + ' = y inside eval')"); //inside eval gives value 110, does not introduce variable in nearby scope
   console.log(y);//Here it gives y value 11
 }
 
